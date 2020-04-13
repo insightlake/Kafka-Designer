@@ -10,11 +10,22 @@ Kafka designer provides a nice intuitive UI and enables drag and drop cluster de
 ## Optimize Your Existing Cluster
 Upload your configuration files. Kafka designer will suggest changes and you can download latest configuration files.
 
+<img style="width:100%;" src="images/cluster.png">
+
 ## Development Template Generation
 Kafka Designer allows you to generate Docker compose blueprint to mimic your other environments so your developers can easily develop consistent apps.
 
+<img style="width:100%;" src="images/docker-composer.png">
+
+<img style="width:100%;" src="images/services.png">
+
 ## Visualize Cluster
 Designer allows you to visualize your cluster.
+
+<img style="width:100%;" src="images/designerView.png">
+
+<img style="width:100%;" src="images/designer-fullview.png">
+
 
 ## Download Sample Applications
 Kafka designer allows you to generate sample coonsumer, producer or streams app template using your cluster configuration. This expedites the app development process.
