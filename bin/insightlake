@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+echo "Starting InsightLake ..."
+
+export JAVA_HOME=/usr/java/default
+
+if [ "$JAVA_HOME" != "" ]; then
+    #echo "run java in $JAVA_HOME"
+    JAVA_HOME=$JAVA_HOME
+fi
+
+if [ "$JAVA_HOME" = "" ]; then
+    echo "Error: JAVA_HOME is not set."
+    exit 1
+fi
+
+JAVA=$JAVA_HOME/bin/java
+JAVA_HEAP_MAX=-Xmx1000m
+
+PRG="${0}"
+
+while [ -h "${PRG}" ]; do
+  ls=`ls -ld "${PRG}"`
+  link=`expr "$ls" : '.*-> \(.*\)$'`
+  if expr "$link" : '/.*' > /dev/null; then
+    PRG="$link"
+  else
+    PRG=`dirname "${PRG}"`/"$link"
+  fi
+done
+
+EDP_HOME=`dirname ${PRG}`
+EDP_HOME=`cd ${EDP_HOME}/..;pwd`
+
+mkdir -p $EDP_HOME/logs
+cd $EDP_HOME/logs
+
+
+echo "$EDP_HOME"
+
+CLASSPATH="$EDP_HOME/conf:$EDP_HOME/libs:$EDP_HOME/bin"
+
+for f in $EDP_HOME/libs/*.jar; do
+    CLASSPATH=${CLASSPATH}:$f;
+done
+
+echo "Starting kafka-Explorer backend ..."
+nohup java -Dthin.root=$EDP_HOME/libs/thin/root -jar $EDP_HOME/libs/thin/root/edp-kafka-sasl-1.0.jar --spring.config.name=h2 --spring.config.location=$EDP_HOME/conf/h2.properties >/dev/null 2>&1 &
+
+echo "Starting Explorer UI"
+nohup java -jar $EDP_HOME/libs/edp-explorer-ui-1.0.jar com.insightlake.edp.cluster.verification.Application --spring.config.name=ui --spring.config.location=$EDP_HOME/conf/ui.properties >/dev/null 2>&1 &
+
