@@ -15,9 +15,9 @@ Upload your configuration files. Kafka designer will suggest changes and you can
 ## Development Template Generation
 Kafka Designer allows you to generate Docker compose blueprint to mimic your other environments so your developers can easily develop consistent apps.
 
-<img style="width:100%;" src="images/docker-composer.png">
-
 <img style="width:100%;" src="images/services.png">
+
+<img style="width:100%;" src="images/docker-composer.png">
 
 ## Visualize Cluster
 Designer allows you to visualize your cluster.
