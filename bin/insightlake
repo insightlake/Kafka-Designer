@@ -44,9 +44,9 @@ for f in $EDP_HOME/libs/*.jar; do
     CLASSPATH=${CLASSPATH}:$f;
 done
 
-echo "Starting kafka-Explorer backend ..."
-nohup java -Dthin.root=$EDP_HOME/libs/thin/root -jar $EDP_HOME/libs/thin/root/edp-kafka-sasl-1.0.jar --spring.config.name=h2 --spring.config.location=$EDP_HOME/conf/h2.properties >/dev/null 2>&1 &
+echo "Starting kafka-Designer backend ..."
+nohup java -Dthin.root=$EDP_HOME/libs/thin/root -jar $EDP_HOME/libs/thin/root/edp-kafka-designer-0.0.1-SNAPSHOT.jar --spring.config.name=h2 --spring.config.location=$EDP_HOME/conf/h2.properties >/dev/null 2>&1 &
 
-echo "Starting Explorer UI"
-nohup java -jar $EDP_HOME/libs/edp-explorer-ui-1.0.jar com.insightlake.edp.cluster.verification.Application --spring.config.name=ui --spring.config.location=$EDP_HOME/conf/ui.properties >/dev/null 2>&1 &
+echo "Starting Designer UI"
+nohup java -jar $EDP_HOME/libs/edp-kafka-designer-ui-1.0.jar com.insightlake.edp.streams.designer.app.Application --spring.config.name=ui --spring.config.location=$EDP_HOME/conf/ui.properties >/dev/null 2>&1 &
 

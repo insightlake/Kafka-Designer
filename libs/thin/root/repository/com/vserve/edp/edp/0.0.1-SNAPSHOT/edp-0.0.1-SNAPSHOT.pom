@@ -26,12 +26,16 @@
 		<module>edp-cluster</module>
 		<module>edp-schema-reg</module>
 		<module>edp-zookeeper</module>
+		<module>edp-cluster-verification</module>
 		<module>edp-kafka</module>
 		<module>edp-api-data</module>
+		<module>edp-notebook</module>
+		<module>edp-cloud-lake</module>
 		<module>edp-catalog</module>
 		<module>edp-security</module>
 		<module>edp-query</module>
 		<module>edp-kconnect</module>
+		<module>edp-kafkarest-mon</module>
 		<module>edp-kafka-perf</module>
 		<module>edp-mockdata</module>
 		<module>edp-io</module>
@@ -45,18 +49,17 @@
 		<module>edp-datascience</module>
 		<module>edp-datascience-ui</module>
 		<module>edp-dashboard-ui</module>
+		<module>kafka-report</module>
 		<module>edp-csr</module>
 		<module>edp-api-csr</module>
 		<module>edp-kafka-sasl</module>
 		<module>edp-calls-analytics</module>
-		
+		<module>transcript-mock-data</module>
+		<module>mongo-mock-data</module>
+        <module>edp-cluster-verification-ui</module>
 		<module>edp-security-api-ui</module>
-
-		
-		
 		<module>edp-explorer-ui</module>
 		<module>edp-schema-ui</module>
-
 		<module>edp-zookeeper-ui</module>
 		<module>edp-streams-ui</module>
 		<module>edp-catalog-ui</module>
@@ -79,6 +82,7 @@
 		<module>edp-gcp-mockdata</module>
 		<module>edp-process-csr</module>
 
+		<module>edp-report-maker</module>
 	</modules>
 	<distributionManagement>
 

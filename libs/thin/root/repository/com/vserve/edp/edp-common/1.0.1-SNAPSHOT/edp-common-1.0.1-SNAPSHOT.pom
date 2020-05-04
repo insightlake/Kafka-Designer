@@ -42,10 +42,10 @@
 			<version>18.0</version>
 		</dependency>
 		<dependency>
-            <groupId>org.apache.pdfbox</groupId>
-            <artifactId>pdfbox</artifactId>
-            <version>2.0.1</version>
-        </dependency>	<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>2.0.1</version>
+		</dependency>	<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-io</artifactId>
@@ -85,12 +85,7 @@
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>4.3.11.RELEASE</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>com.querydsl</groupId>
 			<artifactId>querydsl-sql</artifactId>
@@ -170,6 +165,27 @@
 			<artifactId>mockito-all</artifactId>
 			<version>1.8.4</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>5.0.5.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>5.0.5.RELEASE</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<!-- 	<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>5.1.6.RELEASE</version>
+		</dependency> -->
+
+
 	</dependencies>
 	<!-- <plugins> <plugin> <artifactId>maven-compiler-plugin</artifactId> <configuration> 
 		<source>1.8</source> <target>1.8</target> </configuration> </plugin> </plugins> -->
