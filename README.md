@@ -26,6 +26,10 @@ Designer allows you to visualize your cluster.
 
 <img style="width:100%;" src="images/designer-fullview.png">
 
+## Connector
+Allows you to create connectors depend upon type (sink or source) with default config.
+
+<img style="width:100%;" src="images/connectors.png">
 
 ## Download Sample Applications
 Kafka designer allows you to generate sample coonsumer, producer or streams app template using your cluster configuration. This expedites the app development process.
