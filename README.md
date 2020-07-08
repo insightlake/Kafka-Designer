@@ -50,3 +50,11 @@ Slack Channel - [Join InsightLake Slack Community](https://join.slack.com/t/insi
 Twitter - https://twitter.com/InsightLake
 
 Facebook - https://www.facebook.com/insightlake/
+
+Installation using docker 
+------
+* Download or clone the repository. 
+* cd docker
+* docker-compose -f docker-compose.yaml -up 
+
+
