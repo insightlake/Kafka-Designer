@@ -1,0 +1,18 @@
+version: "2.0"
+
+services:
+  designer-backend-service:
+    build:
+      context: ../libs
+      dockerfile: ./designerbacked
+    ports:
+    - 9494:9494
+
+  designer-ui-service:
+    build:
+      context: ../libs
+      dockerfile: ./designerui
+    ports:
+    - 8080:8080
+    environment:
+    - ADDRESS_SERVICE_BASE_PATH=http://designer-ui-service:8080/address-service
