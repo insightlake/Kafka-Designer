@@ -104,7 +104,7 @@ Allows you to generate connectors depending upon type (sink or source) with conf
 <img style="width:100%;" src="images/connectors.png">
 
 ## Download Sample Applications
-Kafka designer allows you to generate sample coonsumer, producer or streams app template using your cluster configuration. This expedites the app development process.
+Kafka designer allows you to generate sample consumer, producer or streams app template using your cluster configuration. This expedites the app development process.
 
 ## Topic Designer
 Allows you to design topics using right naming conventions, partitions, replication factors and retention.
