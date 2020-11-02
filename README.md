@@ -1,8 +1,10 @@
 # Kafka-Designer
-Design your Kafka Cluster in few minutes
+Design your Kafka Cluster in few minutes and cut down provisioning time from 2-4 weeks to 1-2 days. 
 
 # Introduction
-Kafka deployment is very configuration driven and causes a lot of manual errors. People new to Kafka don’t have complete understanding of the best practices and recommended parameter values. 
+Kafka deployment is very configuration driven and causes a lot of manual errors. People new to Kafka don’t have complete understanding of the best practices and recommended parameter values. Companies in general spend 2-4 weeks in setting up the Kafka cluster and lot of time gets spent in fixing configuration errors making the whole process manual, tedious and error prone.
+Also every company's environment is different and right cluster should be provisioned to utilize the Kafka environment fully.
+
 Kafka Designer’s main goal is to enable teams to generate a robust Kafka cluster template driven by best practices and reduce manual errors.
 
 ## Kafka Versions
@@ -74,7 +76,7 @@ Users can use the designer tool to provision a Kafka cluster. Following are the 
 Kafka designer provides a nice intuitive UI and enables drag and drop cluster design. It does the provisioing by asking critical requirements in simple steps and builds a consistent and robust cluster. 
 
 ## Optimize Your Existing Cluster
-Upload your configuration files. Kafka designer will suggest changes and you can download latest configuration files.
+Upload your configuration files. Kafka designer will suggest changes and you can download the suggested configuration files.
 
 <img style="width:100%;" src="images/cluster.png">
 
@@ -85,15 +87,15 @@ Kafka Designer allows you to generate Docker compose blueprint to mimic your oth
 
 <img style="width:100%;" src="images/docker-composer.png">
 
-## Visualize Cluster
-Designer allows you to visualize your cluster.
+## Visualize & Design Cluster
+Designer allows you to create and visualize your cluster intuitively.
 
 <img style="width:100%;" src="images/designerView.png">
 
 <img style="width:100%;" src="images/designer-fullview.png">
 
 ## Connector
-Allows you to create connectors depend upon type (sink or source) with default config.
+Allows you to generate connectors depending upon type (sink or source) with configurations following best practices and suitable for your designed cluster.
 
 <img style="width:100%;" src="images/connectors.png">
 
@@ -103,40 +105,22 @@ Kafka designer allows you to generate sample coonsumer, producer or streams app 
 ## Topic Designer
 Allows you to design topics using right naming conventions, partitions, replication factors and retention.
 
-License
-------
-InsightLake Data Explorer is a commercial product but distributed to be used freely. Please contact contact@insightlake.com for details.
+# Installation using docker 
+* Download or clone the repository. 
+* cd /docker
+* Run `docker-compose -f docker-compose.yaml up --build`
+* Open browser with URL as http://localhost:8080/
 
-Getting Help
-----------
+# License
+InsightLake Kafka Designer is a commercial product but distributed to be used freely. Please contact contact@insightlake.com for details.
 
+# Getting Help
 You can get help easily :
 Slack Channel - [Join InsightLake Slack Community](https://join.slack.com/t/insightlake/shared_invite/enQtNzQzMDE3MDI4ODA1LWM2YmI5MDUzODM5ZjQzZjE3ZDk1MjhiNThjMTBkODJjMGU2OWJmOWQ0MDE5NGI4YjYyYjVhZjEzYzY3YzIzMjY)
 
 Twitter - https://twitter.com/InsightLake
 
 Facebook - https://www.facebook.com/insightlake/
-
-Installation using docker 
-------
-* Download or clone the repository. 
-* cd /docker
-* Run `docker-compose -f docker-compose.yaml up --build`
-* Open browser with URL as http://localhost:8080/
-
-License
-------
-InsightLake Data Explorer is a commercial product but distributed to be used freely. Please contact contact@insightlake.com for details.
-
-Getting Help
-----------
-
-You can get help easily :
-Community - Google Groups
-Slack Channel
-Twitter
-Facebook
-Email: contact@insightlake.com
 
 
 
