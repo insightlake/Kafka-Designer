@@ -1,4 +1,6 @@
 # Kafka-Designer
+<img style="width:100%;" src="images/designer-fullview.png">
+
 Design your Kafka Cluster in few minutes and cut down provisioning time from 2-4 weeks to 1-2 days. 
 
 # Introduction
@@ -94,7 +96,7 @@ Designer allows you to create and visualize your cluster intuitively.
 
 <img style="width:100%;" src="images/designerView.png">
 
-<img style="width:100%;" src="images/designer-fullview.png">
+
 
 ## Connector
 Allows you to generate connectors depending upon type (sink or source) with configurations following best practices and suitable for your designed cluster.
