@@ -1,4 +1,4 @@
-# Kafka-Designer
+# Kafka-Designer - Design Production Ready Cluster In Minutes
 <img style="width:100%;" src="images/designer-fullview.png">
 
 Design your Kafka Cluster in few minutes and cut down provisioning time from 2-4 weeks to 1-2 days. 
