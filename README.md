@@ -2,7 +2,9 @@
 Design your Kafka Cluster in few minutes and cut down provisioning time from 2-4 weeks to 1-2 days. 
 
 # Introduction
-Kafka deployment is very configuration driven and causes a lot of manual errors. People new to Kafka don’t have complete understanding of the best practices and recommended parameter values. Companies in general spend 2-4 weeks in setting up the Kafka cluster and lot of time gets spent in fixing configuration errors making the whole process manual, tedious and error prone.
+Kafka deployment is very configuration driven and causes a lot of manual errors. People new to Kafka don’t have complete understanding of the best practices and recommended parameter values. 
+
+Companies in general spend 2-4 weeks in setting up the Kafka cluster and lot of time gets spent in fixing configuration errors making the whole process manual, tedious and error prone.
 Also every company's environment is different and right cluster should be provisioned to utilize the Kafka environment fully.
 
 Kafka Designer’s main goal is to enable teams to generate a robust Kafka cluster template driven by best practices and reduce manual errors.
