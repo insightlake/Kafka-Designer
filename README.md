@@ -109,6 +109,8 @@ Kafka designer allows you to generate sample consumer, producer or streams app t
 ## Topic Designer
 Allows you to design topics using right naming conventions, partitions, replication factors and retention.
 
+To learn more, check out [http://www.insightlake.com/kafka-designer.html](http://www.insightlake.com/kafka-designer.html)
+
 # Installation using docker 
 * Download or clone the repository. 
 * cd /docker
