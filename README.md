@@ -117,6 +117,15 @@ To learn more, check out [http://www.insightlake.com/kafka-designer.html](http:/
 * Run `docker-compose -f docker-compose.yaml up --build`
 * Open browser with URL as http://localhost:8080/
 
+# Cli Tools
+* Download or clone the repository. 
+* cd /cli/script
+* run command  ./k-designer  --localPath=<LOCAL-PATH> --file=../config/cluster.json --type=ANSIBLE
+* --localPath this argument provide local directory to generate configuration
+* --file provide cluster configuration file
+* --type provide cluster type and code type for now ANSIBLE and OPERATOR available for cluster and code JAVA,PYTHON,CSHARP
+* Open browser with URL as http://localhost:8080/
+
 # License
 InsightLake Kafka Designer is a commercial product but distributed to be used freely. Please contact contact@insightlake.com for details.
 
