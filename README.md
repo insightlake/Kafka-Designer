@@ -123,8 +123,19 @@ To learn more, check out [http://www.insightlake.com/kafka-designer.html](http:/
 * run command  ./k-designer  --localPath=<LOCAL-PATH> --file=../config/cluster.json --type=ANSIBLE
 * --localPath this argument provide local directory to generate configuration
 * --file provide cluster configuration file
-* --type provide cluster type and code type for now ANSIBLE and OPERATOR available for cluster and code JAVA,PYTHON,CSHARP
-* Open browser with URL as http://localhost:8080/
+* --type there are some following types
+  ANSIBLE -generate ansible configuration of kafka cluster 
+  DOCKER  - it generate docker configuration of kafka cluster
+  PROPERTIES -  generate properties kafka cluster configuration
+  MANIFEST - generate menifest configuration of kafka cluster
+  OPERATOR - generate operator configuration of kafka cluster
+  JAVA - generate kafka consumer producer code in java
+  PYTHON - generate kafka consumer producer code in python
+  CSHARP - generate kafka consumer producer code in c-sharp
+* configuration will generate in given location folder
+* you need to provide cluster json file with some parameter and component 
+  -we provide sample json file under config folder
+ 
 
 # License
 InsightLake Kafka Designer is a commercial product but distributed to be used freely. Please contact contact@insightlake.com for details.
