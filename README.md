@@ -123,18 +123,18 @@ To learn more, check out [http://www.insightlake.com/kafka-designer.html](http:/
 * run command  ./k-designer  --localPath=<LOCAL-PATH> --file=../config/cluster.json --type=ANSIBLE
 * --localPath this argument provide local directory to generate configuration
 * --file provide cluster configuration file
-* --type there are some following types
-  ANSIBLE -generate ansible configuration of kafka cluster 
-  DOCKER  - it generate docker configuration of kafka cluster
-  PROPERTIES -  generate properties kafka cluster configuration
-  MANIFEST - generate menifest configuration of kafka cluster
-  OPERATOR - generate operator configuration of kafka cluster
-  JAVA - generate kafka consumer producer code in java
-  PYTHON - generate kafka consumer producer code in python
-  CSHARP - generate kafka consumer producer code in c-sharp
-* configuration will generate in given location folder
-* you need to provide cluster json file with some parameter and component 
-  -we provide sample json file under config folder
+* --type there are some following types<br />
+  ANSIBLE -generate ansible configuration of kafka cluster <br />
+  DOCKER  - it generate docker configuration of kafka cluster<br />
+  PROPERTIES -  generate properties kafka cluster configuration<br />
+  MANIFEST - generate menifest configuration of kafka cluster<br />
+  OPERATOR - generate operator configuration of kafka cluster<br />
+  JAVA - generate kafka consumer producer code in java<br />
+  PYTHON - generate kafka consumer producer code in python<br />
+  CSHARP - generate kafka consumer producer code in c-sharp<br />
+* configuration will generate in given location folder<br />
+* you need to provide cluster json file with some parameter and component <br />
+  -we provide sample json file under config folder<br /><br />
  
 
 # License
